@@ -173,6 +173,7 @@ if submit:
         g_bfs.add_edge(i[0],i[1],i[2])
     st.header("Using DFS approach :")
     start = time.time()
+    time.sleep(0.0001)
     st.subheader(f"The maximum possible flow is {g_dfs.fordFulkerson(src, sink)}")
     end = time.time()
     st.write(f"Time taken : {end-start} seconds")
