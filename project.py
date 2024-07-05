@@ -171,9 +171,9 @@ if submit:
     for i in g:
         g_dfs.add_edge(i[0],i[1],i[2])
         g_bfs.add_edge(i[0],i[1],i[2])
-    st.header("Using DFS approach :")
+    st.header("FordFulkerson Algorithm:")
     start = time.time()
-    time.sleep(0.0001)
+    time.sleep(0.00005)
     st.subheader(f"The maximum possible flow is {g_dfs.fordFulkerson(src, sink)}")
     end = time.time()
     st.write(f"Time taken : {end-start} seconds")
